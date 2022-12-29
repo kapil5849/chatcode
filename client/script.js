@@ -63,7 +63,7 @@ const handleSubmit = async (e) => {
   chatContainer.scrollTop = chatContainer.scrollHeight;
   const messageDiv = document.getElementById(uniqueId)
   loader(messageDiv)
-  const response = await fetch('https://chatcode-fxmm.onrender.com', {
+  const response = await fetch('https://chatcode-fxmm.onrender.com/', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
